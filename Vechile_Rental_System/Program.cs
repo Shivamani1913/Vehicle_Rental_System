@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vechile_Rental_System
 {
-    using System;
-    using System.Collections.Generic;
-
+    //Abstraction and Encapsulation
     abstract class Vehicle
     {
         public string Make { get; set; }
@@ -28,7 +26,7 @@ namespace Vechile_Rental_System
             Console.WriteLine($"{Make} {Model}, Rent: {BaseRent}/day");
         }
     }
-
+    // Inheritance and Polymorphism
     class Car : Vehicle
     {
         public bool IsAutomatic { get; set; }
